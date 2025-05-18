@@ -3,12 +3,12 @@
 // The second is the name of each card ”ace”, “one”…”king”
 // Console log them in order
 
-let suits = ['diamonds', 'hearts', 'clubs', 'spades'];
-let values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+let deck = [['diamonds', 'hearts', 'clubs', 'spades'],['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']];
 
-  for (let value of values) {
-    console.log(`${value} of ${'K'}`);
+  for (let card of deck[1]) {
+    console.log(`${card} of K`);
   }
+
   // A of K
   // 2 of K
   // 3 of K
