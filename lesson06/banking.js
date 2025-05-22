@@ -73,6 +73,7 @@ function startBankApp() {
       switch (options) {
         case 'D':
           const depAmount = parseFloat(prompt('Enter amount to deposit:'));
+          
           if (!isNaN(depAmount) && depAmount > 0 && depAmount <= 50000) {
             totalDeposit += depAmount;
             totalBalance += depAmount;
@@ -87,6 +88,7 @@ function startBankApp() {
   
         case 'W':
           let withAmount = parseFloat(prompt('Enter amount to withdraw:'));
+          
           if (!isNaN(withAmount) && withAmount > 0) {
             if (withAmount > totalBalance) {
                 alert("Insufficient balnce.");
